@@ -5,7 +5,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  // Fonnte payload extraction (adjust based on Fonnte docs)
+  // Ensure this matches the JSON payload structure sent by Fonnte
   const { sender, message } = req.body; 
 
   try {
